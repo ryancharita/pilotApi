@@ -16,6 +16,7 @@ router.post('/login', validateBody(loginSchema), async (req, res) => {
     if (userResult.rows.length === 0) {
       return res.status(404).json({ message: 'Invalid email or password' });
     }
+
     const user = userResult.rows[0];
 
     // Compare Passwords Using bcrypt
