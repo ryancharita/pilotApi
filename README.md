@@ -34,12 +34,16 @@ A Node.js RESTful API built with Express, designed for deployment on Vercel. Thi
 ├── db/
 ├── .env
 └── package.json
+```
+
+---
 
 📖 Getting Started
 1️⃣ Clone the
 
 ```git clone <repository-url>
-cd api```
+cd api
+```
 
 2️⃣ Install Dependencies
 ```npm install```
@@ -48,7 +52,8 @@ cd api```
 Create a .env file in the root directory and define the following:
 ```PORT=3000
 DATABASE_URL=your_postgresql_connection_string
-JWT_SECRET=your_secret_key```
+JWT_SECRET=your_secret_key
+```
 
 4️⃣ Run the Application
 Development Mode (with auto-restart):
@@ -56,6 +61,8 @@ Development Mode (with auto-restart):
 
 Production Mode:
 ```vercel```
+
+---
 
 ✅ API Endpoints
 | Method | Endpoint      | Description        |
@@ -66,6 +73,7 @@ Production Mode:
 
 Add more endpoint documentation as needed.
 
+---
 
 📚 Scripts
 | Command         | Description                    |
