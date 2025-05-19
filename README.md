@@ -87,7 +87,5 @@ Add more endpoint documentation as needed.
 📚 Scripts
 | Command         | Description                    |
 | --------------- | ------------------------------ |
-| `npm start`     | Start the server (Production)  |
-| `npm run dev`   | Start server in dev mode       |
-| `npm run build` | Build step (Not required)      |
-| `npm test`      | Run tests (No tests specified) |
+| `vercel`        | build and deploy (Production)  |
+| `vercel dev`    | Start server in dev mode       |
