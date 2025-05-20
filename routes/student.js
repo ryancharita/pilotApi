@@ -7,7 +7,15 @@ const { createStudentSchema } = require('../validation_schema');
 // GET All Students
 router.get('/', async (req, res) => {
   try {
-    const { rows } = await db.query('SELECT * FROM students');
+    const { rows } = await db.query(
+      `SELECT
+        s.*,
+        u.name AS user_name,
+        u.email AS user_email,
+        u.role AS user_role
+      FROM students s
+      JOIN users u ON s.user_id = u.id`,
+    );
     return res.json(rows);
   } catch (error) {
     console.error(error);
